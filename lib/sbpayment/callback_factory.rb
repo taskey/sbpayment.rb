@@ -2,7 +2,6 @@ require 'xmlsimple'
 
 module Sbpayment
   module CallbackFactory
-
     module_function
 
     def request(headers, body)

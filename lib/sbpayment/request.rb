@@ -40,6 +40,8 @@ module Sbpayment
       response_class.new response.status, response.headers, response.body, need_decrypt: need_encrypt?
     end
 
+    alias execute perform
+
     private
 
     def need_encrypt?

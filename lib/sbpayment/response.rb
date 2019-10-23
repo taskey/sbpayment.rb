@@ -21,5 +21,9 @@ module Sbpayment
       code = body[:res_err_code]
       code && APIError.parse(code)
     end
+
+    def success?
+      body[:res_result] == 'OK'
+    end
   end
 end

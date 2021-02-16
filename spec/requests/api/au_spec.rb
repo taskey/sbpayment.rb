@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe 'au API behavior' do
   describe 'AuthorizationRequest' do
     around do |e|

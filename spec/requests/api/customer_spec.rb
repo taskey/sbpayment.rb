@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe 'Customer API behavior' do
   let(:cust_code) { SecureRandom.hex }
 
@@ -138,7 +136,6 @@ describe 'Customer API behavior' do
       end
 
       it 'returns OK' do
-        token, tokenKey = get_tokens
         req = Sbpayment::API::Credit::UpdateCustomerTokenRequest.new
         req.cust_code = @cust_code_for_request_with_token
         req.encrypted_flg = '0'

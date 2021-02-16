@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe Sbpayment::TimeUtil do
   around do |example|
     ENV['TZ'], old = 'UTC', ENV['TZ']

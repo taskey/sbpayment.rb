@@ -1,5 +1,3 @@
-require_relative '../spec_helper'
-
 describe Sbpayment::Error do
   subject { Sbpayment::Error.superclass }
   it { is_expected.to equal(StandardError) }

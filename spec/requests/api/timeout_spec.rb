@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe 'timeout behavior' do
 
   def dummy_request

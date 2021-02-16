@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe Sbpayment::Configuration do
   before do
     # reset Sbpayment::Config.instance for test because it's singleton

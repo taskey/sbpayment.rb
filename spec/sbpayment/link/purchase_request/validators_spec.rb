@@ -1,7 +1,5 @@
 # coding: Shift_JIS
 
-require_relative '../../../spec_helper'
-
 describe Sbpayment::Link::PurchaseRequest::FREE_CSV_FIELD_VALIDATOR do
   subject { described_class }
 

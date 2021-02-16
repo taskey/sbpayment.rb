@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 RSpec.shared_context "prepare purchase report params" do
   before do
     Sbpayment.configure do |x|

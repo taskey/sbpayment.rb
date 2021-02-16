@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe Sbpayment::ShallowHash do
   using Sbpayment::ShallowHash
 

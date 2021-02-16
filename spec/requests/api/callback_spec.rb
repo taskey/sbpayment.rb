@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe Sbpayment::CallbackFactory do
   let(:request_header) { nil }
 

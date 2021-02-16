@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe 'Credit API behavior' do
   describe 'without token' do
     before do

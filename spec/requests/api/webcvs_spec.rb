@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe 'Webcvs API behavior' do
   before do
     Sbpayment.configure do |x|

@@ -1,4 +1,4 @@
-describe 'Credit API behavior' do
+RSpec.describe 'Credit API behavior' do
   describe 'without token' do
     before do
       Sbpayment.configure do |x|

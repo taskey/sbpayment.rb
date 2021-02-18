@@ -1,4 +1,4 @@
-describe Sbpayment::Configuration do
+RSpec.describe Sbpayment::Configuration do
   before do
     # reset Sbpayment::Config.instance for test because it's singleton
     Sbpayment::Config.instance_variable_set('@singleton__instance__', nil)

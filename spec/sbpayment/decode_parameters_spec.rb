@@ -1,4 +1,4 @@
-describe Sbpayment::DecodeParameters do
+RSpec.describe Sbpayment::DecodeParameters do
   class Example
     include Sbpayment::DecodeParameters
     DECRYPT_PARAMETERS = %i(foo bar)

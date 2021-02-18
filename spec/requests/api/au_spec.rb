@@ -1,4 +1,4 @@
-describe 'au API behavior' do
+RSpec.describe 'au API behavior' do
   describe 'AuthorizationRequest' do
     around do |e|
       VCR.use_cassette 'au-authorization' do

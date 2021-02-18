@@ -1,4 +1,4 @@
-describe 'Customer API behavior' do
+RSpec.describe 'Customer API behavior' do
   let(:cust_code) { SecureRandom.hex }
 
   describe 'withou token' do

@@ -1,4 +1,4 @@
-describe Sbpayment::Link::UpdateResult do
+RSpec.describe Sbpayment::Link::UpdateResult do
   shared_context "prepare update result params" do
     before do
       Sbpayment.configure do |x|

@@ -1,4 +1,4 @@
-describe Sbpayment::Crypto do
+RSpec.describe Sbpayment::Crypto do
   let(:key)  { SecureRandom.hex 12 }
   let(:iv)   { SecureRandom.hex  4 }
 

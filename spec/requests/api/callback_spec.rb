@@ -1,4 +1,4 @@
-describe Sbpayment::CallbackFactory do
+RSpec.describe Sbpayment::CallbackFactory do
   let(:request_header) { nil }
 
   describe 'PayEasy Notice' do

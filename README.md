@@ -87,6 +87,7 @@ Action Name                                      | sps-api-request id | Request 
 Action Name                       | sps-api-request id | Request class                       |
 ---                               | ---                | ---                                 |
 auかんたん決済 取消・返金要求処理 | `ST02-00303-402`   | `Sbpayment::API::Au::CancelRefundRequest` |
+auかんたん決済 継続課金（簡易）解約要求 | `ST02-00302-402`   | `Sbpayment::API::Au::SimplifiedCancelRequest` |
 auかんたん決済 購入要求要求処理 (継続課金(定期・従量)) | `ST01-00104-402`   | `Sbpayment::API::Au::AuthorizationRequest` |
 
 ###### Softbank

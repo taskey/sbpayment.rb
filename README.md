@@ -63,6 +63,7 @@ Action Name                   | sps-api-request id | Request class              
 コミット (確定処理)           | `ST02-00101-101`   | `Sbpayment::API::Credit::CommitRequest`               |
 売り上げ連携                  | `ST02-00201-101`   | `Sbpayment::API::Credit::SalesRequest`                |
 決済結果参照                  | `MG01-00101-101`   | `Sbpayment::API::Credit::InquireAuthorizationRequest` |
+継続課金(簡易)解約要求         | `ST02-00302-101`   | `Sbpayment::API::Credit::SimplifiedCancelRequest`     |
 取消要求                      | `ST02-00305-101`   | `Sbpayment::API::Credit::CancelAuthorizationRequest`  |
 返金要求                      | `ST02-00303-101`   | `Sbpayment::API::Credit::RefundRequest`               |
 部分返金要求                  | `ST02-00307-101`   | `Sbpayment::API::Credit::PartlyRefundRequest`         |

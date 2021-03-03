@@ -1,6 +1,26 @@
 ## Unreleased
 - none
 
+## v0.13.0
+
+### Breaking Changes
+- none
+
+### Features
+- Implement Sbpayment::API::Au::SimplifiedCancelRequest (#144)
+- Implement Sbpayment::API::Docomo::SimplifiedCancelRequest (#143)
+- Implement Sbpayment::API::Credit::SimplifiedCancelRequest (#142)
+
+### Fixed
+- none
+
+### Interior
+- Remove unused code from spec (#136)
+- Care bundler deprecation in CI (#138)
+- Add Docker development section in README (#139)
+- Enable `Zero monkey patching mode` in rspec (#140)
+- Update CI rubies and test in latest too (#137)
+
 ## v0.12.0
 
 - Add support for ST01-00104-401 ドコモケータイ払い 購入要求要求処理 (継続課金(定期・従量)) (#93 / @tashirosota)

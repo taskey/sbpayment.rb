@@ -4,14 +4,14 @@ require_relative '../../response'
 module Sbpayment
   module API
     module Softbank
-      class PayOptionManage
-        include ParameterDefinition
-
-        tag 'pay_option_manage'
-        key :amount
-      end
-
       class SalesRequest < Request
+        class PayOptionManage
+          include ParameterDefinition
+
+          tag 'pay_option_manage'
+          key :amount
+        end
+
         tag 'sps-api-request', id: 'ST02-00201-405'
         key :merchant_id, default: -> { Sbpayment.config.merchant_id }
         key :service_id,  default: -> { Sbpayment.config.service_id }

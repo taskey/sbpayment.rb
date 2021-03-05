@@ -4,14 +4,14 @@ require_relative '../../response'
 module Sbpayment
   module API
     module Softbank
-      class PayOptionManage
-        include ParameterDefinition
-
-        tag 'pay_option_manage'
-        key :amount
-      end
-
       class CommitRequest < Request
+        class PayOptionManage
+          include ParameterDefinition
+
+          tag 'pay_option_manage'
+          key :amount
+        end
+
         def initialize(*arg, &blk)
           warn 'Sbpayment::API::Softbank::CommitRequest is deprecated, should use Sbpayment::API::Softbank::SalesRequest'
           super(*arg, &blk)

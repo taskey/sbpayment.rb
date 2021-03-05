@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://stbfep.sps-system.com/api/xmlapi.do
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="Shift_JIS"?><sps-api-request id="ST01-00104-401"><merchant_id>30132</merchant_id><service_id>103</service_id><cust_code>67ed492d374a802fcfb66a902d43a0b9</cust_code><order_id>b0495abf8b15054ced395b400b5dea15</order_id><item_id>item_2</item_id><item_name>jHCRsYnbi+CNd5P8</item_name><amount>980</amount><request_date>20191018173635</request_date><sps_hashcode>9ae11743480e1b1c93964bd6964137405bea8c73</sps_hashcode></sps-api-request>
+    headers:
+      User-Agent:
+      - Faraday v0.17.0
+      Content-Type:
+      - text/xml
+      Authorization:
+      - Basic MzAxMzIxMDM6ZWQ2NzllMWM5ZjkwYzJhYjk2YjI1ZDVjNTgwYjU4ZTI1MTkyZWI1ZA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 14 Feb 2021 02:05:48 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - JSESSIONID=B0218CB9F18D807B5999ABC8443ADCFD.f114; Path=/api
+      Pragma:
+      - No-cache
+      Cache-Control:
+      - no-cache,no-store,max-age=0
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Content-Length:
+      - '201'
+      Connection:
+      - close
+      Content-Type:
+      - text/xml;charset=Shift_JIS
+      Content-Language:
+      - ja
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version='1.0' encoding='Shift_JIS' ?>
+          <sps-api-response>
+            <res_result>NG</res_result>
+            <res_err_code>40103026</res_err_code>
+            <res_date>20210214110548</res_date>
+          </sps-api-response>
+    http_version: 
+  recorded_at: Fri, 18 Oct 2019 08:36:35 GMT
+recorded_with: VCR 5.0.0

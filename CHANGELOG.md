@@ -1,6 +1,25 @@
 ## Unreleased
 - none
 
+## v0.14.0
+
+### Breaking Changes
+- none
+
+### Features
+- Add support for ドコモ、au 売上要求処理 (継続課金(定期・従量)) (#125 / @tashirosota) 
+
+### Fixed
+- none
+
+### Deprecated
+- Change Softbank::CommitRequest to Softbank::SalesRequest (#141 / @tashirosota)
+  - `Sbpayment::API::Softbank::CommitRequest` was renamed for `Sbpayment::API::Softbank::SalesRequest`.
+  - We'll remove or redefine `Sbpayment::API::Softbank::CommitRequest` in future versions.
+
+### Interior
+- Update webmock requirement from ~> 3.11.2 to ~> 3.12.0 (#145)
+
 ## v0.13.0
 
 ### Breaking Changes

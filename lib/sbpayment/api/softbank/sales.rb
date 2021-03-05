@@ -11,12 +11,7 @@ module Sbpayment
         key :amount
       end
 
-      class CommitRequest < Request
-        def initialize(*arg, &blk)
-          warn 'Sbpayment::API::Softbank::CommitRequest is deprecated, should use Sbpayment::API::Softbank::SalesRequest'
-          super(*arg, &blk)
-        end
- 
+      class SalesRequest < Request
         tag 'sps-api-request', id: 'ST02-00201-405'
         key :merchant_id, default: -> { Sbpayment.config.merchant_id }
         key :service_id,  default: -> { Sbpayment.config.service_id }
@@ -27,7 +22,7 @@ module Sbpayment
         key :sps_hashcode
       end
 
-      class CommitResponse < Response
+      class SalesResponse < Response
       end
     end
   end

@@ -21,7 +21,7 @@ module Sbpayment
     # @return [String]
     def res_err_code
       str = "#{payment_method.code}#{type.code}#{@item.code}"
-      PATTERN.match(str) ? str : raise("should not reach here: #{str}")
+      PATTERN.match?(str) ? str : raise("should not reach here: #{str}")
     end
     alias_method :to_s, :res_err_code
 

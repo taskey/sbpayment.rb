@@ -11,7 +11,7 @@ module Sbpayment
 
         # @param code [String]
         def valid_code?(code)
-          !! self::PATTERN.match(code)
+          self::PATTERN.match?(code)
         end
 
         def check_code(code)
@@ -63,7 +63,7 @@ module Sbpayment
       define_children_from TYPE_COMMON_DEFINITIONS
 
       def retryable?
-        !!/\A[89]/.match(code) # Can not use `match?` until drop to less than ruby 2.4.0
+        /\A[89]/.match?(code)
       end
     end
 

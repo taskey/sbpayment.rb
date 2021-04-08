@@ -172,9 +172,12 @@ module Sbpayment
   end
 
   APIError::ITEM_DEFINITIONS.each_pair do |payment_method_code, definitions|
-    klass = const_get :"API#{payment_method_code}Error"
-    klass::Item = Class.new APIError::Item do
-      define_children_from definitions
+    pattern = /\AAPI#{payment_method_code}(?:[0-9a-zA-Z]{2})?Error\z/
+    constants.grep(pattern) do |class_name|
+      klass = const_get class_name
+      klass::Item = Class.new APIError::Item do
+        define_children_from definitions
+      end
     end
   end
 end

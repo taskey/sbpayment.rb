@@ -82,6 +82,18 @@ RSpec.describe Sbpayment::APIError do
       end
     end
 
+    context 'with a known pattern "40103200"' do
+      subject { Sbpayment::APIError.parse '40103200' }
+
+      it 'returns a API40103Error' do
+        expect(subject).to be_an_instance_of(Sbpayment::API40103Error)
+      end
+
+      it 'knows the item detail' do
+        expect(subject.item.summary).to eq('取消対象年月')
+      end
+    end
+
     context 'with a known pattern "40203200"' do
       subject { Sbpayment::APIError.parse '40203200' }
 
@@ -89,7 +101,7 @@ RSpec.describe Sbpayment::APIError do
         expect(subject).to be_an_instance_of(Sbpayment::API40203Error)
       end
 
-      pending 'knows the item detail' do
+      it 'knows the item detail' do
         expect(subject.item.summary).to eq('取消対象年月')
       end
     end

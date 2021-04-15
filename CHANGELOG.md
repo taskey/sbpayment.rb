@@ -1,6 +1,24 @@
 ## Unreleased
 - none
 
+## v0.15.0
+
+### Breaking Changes
+- Prefer Regexp#match? and drop ruby < 2.4 support (#132)
+  - We dropped support for Ruby 2.2 and 2.3. Please use Ruby 2.4 or later.
+- Raise specific error instead of ArgumentError for parsing failure (#134)
+  - Please use `Sbpayment::ParserError` instead of `ArgumentError` when rescuing.
+    - (Before) `Sbpayment::APIError.parse('invalid format') #=> ArgumentError`
+    - (After)  `Sbpayment::APIError.parse('invalid format') #=> Sbpayment::ParserError`
+
+### Fixed
+- Fix some APIError item summary (#131)
+  - Now definitions are set in `"API#{payment_method_code}#{type_code}Error"` as same as `"API#{payment_method_code}Error"`.
+
+### Interior
+- Update CI rubies (#149)
+- Update vcr requirement from ~> 5.1.0 to ~> 6.0.0 (#152)
+
 ## v0.14.0
 
 ### Breaking Changes

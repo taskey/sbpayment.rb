@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'bundler', '~> 2.1'
   spec.add_development_dependency 'rake', '~> 13.0'
   spec.add_development_dependency 'rspec'
-  spec.add_development_dependency 'vcr', '~> 5.1.0'
+  spec.add_development_dependency 'vcr', '~> 6.0.0'
   spec.add_development_dependency 'webmock', '~> 3.12.0'
   spec.add_development_dependency 'pry'
   spec.add_development_dependency 'timecop'

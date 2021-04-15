@@ -1,6 +1,15 @@
+require_relative '../spec_helper'
+
 RSpec.describe Sbpayment::Error do
-  subject { Sbpayment::Error.superclass }
+  subject { described_class.superclass }
+
   it { is_expected.to equal(StandardError) }
+end
+
+RSpec.describe Sbpayment::ParserError do
+  subject { described_class }
+
+  it { is_expected.to be < Sbpayment::Error }
 end
 
 RSpec.describe Sbpayment::APIError do
@@ -17,11 +26,11 @@ RSpec.describe Sbpayment::APIError do
       expect(Sbpayment::APIError.parse '11122333').to be_an_instance_of(Sbpayment::APIUnknownPaymentMethodError)
     end
 
-    it 'raises an ArgumentError when given an invalid format' do
-      expect { Sbpayment::APIError.parse '11122333\n' }.to raise_error(ArgumentError)
-      expect { Sbpayment::APIError.parse '1112!333' }.to raise_error(ArgumentError)
-      expect { Sbpayment::APIError.parse '111223339' }.to raise_error(ArgumentError)
-      expect { Sbpayment::APIError.parse '1112299' }.to raise_error(ArgumentError)
+    it 'raises a ParserError when given an invalid format' do
+      expect { Sbpayment::APIError.parse '11122333\n' }.to raise_error(Sbpayment::ParserError)
+      expect { Sbpayment::APIError.parse '1112!333' }.to raise_error(Sbpayment::ParserError)
+      expect { Sbpayment::APIError.parse '111223339' }.to raise_error(Sbpayment::ParserError)
+      expect { Sbpayment::APIError.parse '1112299' }.to raise_error(Sbpayment::ParserError)
     end
 
     context 'with common types' do

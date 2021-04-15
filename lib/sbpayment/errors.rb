@@ -5,6 +5,7 @@ require_relative 'api_error/feature_modules'
 module Sbpayment
   # Usualy, SBPS exceptions should be a subclass of this class or a nested subclass
   class Error < StandardError; end
+  class ParserError < Error; end
 
   # * We basically get special errors from `APIError.parse(error_code)`
   #   * When given an known `error_code`, this returns as a specific error, that is named as `API12345Error`
@@ -57,7 +58,7 @@ module Sbpayment
             end
           end
         else
-          raise ArgumentError, "given an invalid format: #{res_err_code}"
+          raise ParserError, "given an invalid format: #{res_err_code}"
         end
       end
     end

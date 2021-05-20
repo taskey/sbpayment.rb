@@ -29,6 +29,7 @@ workflows:
                 - gemfiles/faraday-0.16/Gemfile
                 - gemfiles/faraday-0.17/Gemfile
                 - gemfiles/faraday-1.0/Gemfile
+                - gemfiles/faraday-1.4/Gemfile
               ruby-image:
                 - circleci/ruby:2.4.9-browsers
                 - circleci/ruby:2.5.9-browsers

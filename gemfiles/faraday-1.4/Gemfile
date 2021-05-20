@@ -1,0 +1,9 @@
+source 'https://rubygems.org'
+
+# Specify your gem's dependencies in sbpayment.gemspec
+gemspec path: File.expand_path('../../..', __FILE__)
+
+gem 'faraday', '1.4.1'
+
+gem 'pry-byebug'
+gem 'webdrivers' unless ENV.key?('CIRCLECI')

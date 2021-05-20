@@ -1,0 +1,93 @@
+PATH
+  remote: /Users/yuya.mitsuboshi/ghq/github.com/quipper/sbpayment.rb
+  specs:
+    sbpayment (0.15.0)
+      builder
+      faraday (>= 0.16.0, < 1.5.0)
+      xml-simple
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.7.0)
+      public_suffix (>= 2.0.2, < 5.0)
+    builder (3.2.4)
+    byebug (11.1.3)
+    childprocess (3.0.0)
+    coderay (1.1.3)
+    crack (0.4.5)
+      rexml
+    diff-lcs (1.4.4)
+    faraday (1.4.1)
+      faraday-excon (~> 1.1)
+      faraday-net_http (~> 1.0)
+      faraday-net_http_persistent (~> 1.1)
+      multipart-post (>= 1.2, < 3)
+      ruby2_keywords (>= 0.0.4)
+    faraday-excon (1.1.0)
+    faraday-net_http (1.0.1)
+    faraday-net_http_persistent (1.1.0)
+    hashdiff (1.0.1)
+    method_source (1.0.0)
+    mini_portile2 (2.4.0)
+    multipart-post (2.1.1)
+    nokogiri (1.10.10)
+      mini_portile2 (~> 2.4.0)
+    pry (0.13.1)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
+    pry-byebug (3.9.0)
+      byebug (~> 11.0)
+      pry (~> 0.13.0)
+    public_suffix (4.0.6)
+    rake (13.0.1)
+    rexml (3.2.5)
+    rspec (3.9.0)
+      rspec-core (~> 3.9.0)
+      rspec-expectations (~> 3.9.0)
+      rspec-mocks (~> 3.9.0)
+    rspec-core (3.9.2)
+      rspec-support (~> 3.9.3)
+    rspec-expectations (3.9.2)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.9.0)
+    rspec-mocks (3.9.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.9.0)
+    rspec-support (3.9.3)
+    ruby2_keywords (0.0.4)
+    rubyzip (2.3.0)
+    selenium-webdriver (3.142.7)
+      childprocess (>= 0.5, < 4.0)
+      rubyzip (>= 1.2.2)
+    timecop (0.9.1)
+    vcr (6.0.0)
+    webdrivers (4.4.1)
+      nokogiri (~> 1.6)
+      rubyzip (>= 1.3.0)
+      selenium-webdriver (>= 3.0, < 4.0)
+    webmock (3.12.2)
+      addressable (>= 2.3.6)
+      crack (>= 0.3.2)
+      hashdiff (>= 0.4.0, < 2.0.0)
+    xml-simple (1.1.8)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 2.1)
+  faraday (= 1.4.1)
+  pry
+  pry-byebug
+  rake (~> 13.0)
+  rspec
+  sbpayment!
+  selenium-webdriver
+  timecop
+  vcr (~> 6.0.0)
+  webdrivers
+  webmock (~> 3.12.0)
+
+BUNDLED WITH
+   2.2.3

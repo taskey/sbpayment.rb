@@ -1,6 +1,0 @@
-# If you want to know dependabot config, see https://dependabot.com/docs/config-file/
-version: 1
-update_configs:
-  - directory: "/"
-    package_manager: "ruby:bundler"
-    update_schedule: "daily"

@@ -1,5 +1,7 @@
 ## Unreleased
-- none
+
+### Breaking Changes
+- Drop support for Ruby 2.4
 
 ## v0.15.0
 

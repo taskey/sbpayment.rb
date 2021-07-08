@@ -3,6 +3,9 @@
 ### Breaking Changes
 - Drop support for Ruby 2.4
 
+### Interior
+- Update faaday reuirement to >= 0.16.0, < 1.6.0 [#159]
+
 ## v0.15.0
 
 ### Breaking Changes
